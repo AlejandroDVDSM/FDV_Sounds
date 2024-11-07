@@ -163,3 +163,9 @@ public class AudioSpeed : MonoBehaviour
 https://github.com/user-attachments/assets/1ac686cf-0b73-4a93-a4d7-c7d45f4c3470
 
 ## 7. Agregar un sonido de fondo a la escena que se esté reproduciendo continuamente desde que esta se carga. Usar un mezclador para los sonidos.
+
+Esto apartado es exactamente lo mismo que el apartado 3, donde se empleó un mezclador con dos grupos distintos, uno para la música de fondo y otro para los sonidos.
+
+## 8. Crear un script para simular el sonido que hace el jugador cuando está en movimiento (mecánica para reproducir sonidos de pasos).
+
+
