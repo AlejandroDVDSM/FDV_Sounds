@@ -32,7 +32,7 @@ _Resultado con `Volume Roloff` a `Linear Roloff`:_
 
 https://github.com/user-attachments/assets/0c06a3e2-379a-45d4-b126-2cd5ff8d2337
 
-## 3. Configurar un mezclador de sonidos, aplica a uno de los grupo un filtro de echo y el resto de filtros libre. Configura cada grupo y masteriza el efecto final de los sonidos que estás mezclando. Explica los cambios que has logrado con tu mezclador.
+## 3. Configurar un mezclador de sonidos, aplica a uno de los grupo un filtro de eco y el resto de filtros libre. Configura cada grupo y masteriza el efecto final de los sonidos que estás mezclando. Explica los cambios que has logrado con tu mezclador.
 
 Creamos un `AudioMixer` haciendo click derecho desde la pestaña _Project_ y seleccionando la opción `Create > Audio Mixer`
 
@@ -102,7 +102,7 @@ public class MovingAudio : MonoBehaviour
 
 https://github.com/user-attachments/assets/911127cc-853e-4c95-8c54-af1b7dad9a5d
 
-## 5. Implementar un script en el que el jugador actuve un sonido al colisionar con la esfera.
+## 5. Implementar un script en el que el jugador active un sonido al colisionar con la esfera.
 
 Se añade el siguiente script a la esfera, que contendra un `AudioSource` y un `SphereCollider`:
 
