@@ -230,3 +230,11 @@ https://github.com/user-attachments/assets/aa453ba3-da58-4341-89e9-0da36ead1924
 * Crea un grupo para música:
     * Crea un loop de música de fondo acorde al tono del juego
 
+
+
+
+## Créditos
+
+* Música de fondo por alkakrab: https://alkakrab.itch.io/fantasy-rpg-soundtrack-music.
+* Sonidos de disparos por SnakeF8: https://f8studios.itch.io/snakes-authentic-gun-sounds.
+* Sonidos de pasos por Pelatho: https://thowsenmedia.itch.io/video-game-footstep-sound-pack.
