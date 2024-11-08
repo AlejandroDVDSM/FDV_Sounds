@@ -220,7 +220,7 @@ https://github.com/user-attachments/assets/aa453ba3-da58-4341-89e9-0da36ead1924
 
 ## 9. En la escena de tus ejercicios 2D incorpora efectos de sonido ajustados a los siguientes requisitos:
 
-* Crea un grupo SFX en el AudioMixer para eventos:
+1. Crea un grupo SFX en el AudioMixer para eventos:
     * Movimiento del personaje: Crea sonidos específicos para saltos y aterrizajes.
     * Interacción y recolección de objetos: Diseña sonido para la recolección de objetos.
     * Indicadores de salud/vida: Diseña un sonido breve y distintivo para cada cambio en el estado de salud (por ejemplo, ganar o perder vida).
@@ -230,6 +230,13 @@ https://github.com/user-attachments/assets/aa453ba3-da58-4341-89e9-0da36ead1924
 * Crea un grupo para música:
     * Crea un loop de música de fondo acorde al tono del juego
 
+![image](https://github.com/user-attachments/assets/b72d6671-5ee7-40d0-b575-546a708cc18d)
+
+
+
+https://github.com/user-attachments/assets/67ef8155-173c-4f9e-9bdd-d16c116ae90a
+
+
 
 
 
@@ -238,3 +245,8 @@ https://github.com/user-attachments/assets/aa453ba3-da58-4341-89e9-0da36ead1924
 * Música de fondo por alkakrab: https://alkakrab.itch.io/fantasy-rpg-soundtrack-music.
 * Sonidos de disparos por SnakeF8: https://f8studios.itch.io/snakes-authentic-gun-sounds.
 * Sonidos de pasos por Pelatho: https://thowsenmedia.itch.io/video-game-footstep-sound-pack.
+* Sonido de recompensa por Cyberwave Orchestra: https://cyberwave-orchestra.itch.io/hints-stars-points-rewards-pack.
+* Sonido de curación por Leohpaz: https://leohpaz.itch.io/50-rpg-healing-buffs-sfx.
+* Sonido de daño por VoiceBosch: https://voicebosch.itch.io/taking-damage-sounds-male-grunts-audio-pack.
+* Sonido ambiental de pájaros por Ham: https://zombieham.itch.io/bird-sounds-mini-pack.
+* Sonido ambiental de cafetería por Diablo Luna ど苛ッ: https://pudretediablo.itch.io/butterfly.
