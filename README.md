@@ -168,4 +168,65 @@ Esto apartado es exactamente lo mismo que el apartado 3, donde se empleó un mez
 
 ## 8. Crear un script para simular el sonido que hace el jugador cuando está en movimiento (mecánica para reproducir sonidos de pasos).
 
+Añadimos un `AudioSource` al personaje y desmarcamos las opciones `Play On Awake` y `Loop`. También es importante dejar la referencia de `AudioClip` sin asignar, ya que la asignaremos directamente desde el código.
+
+![image](https://github.com/user-attachments/assets/b9fe867c-b551-442e-a836-b78dbe5afc27)
+
+A continuación, en nuestro script creamos un array de `AudioClip` que serán reproducidos mientras el personaje se mueve.
+
+```cs
+using UnityEngine;
+using Random = System.Random;
+
+public class PlayerMovementAudio : MonoBehaviour
+{
+    [SerializeField] private float _moveSpeed = 1.0f;
+
+    [SerializeField] private AudioClip[] _audioClips;
+    
+    private AudioSource _audioSource;
+    private Random _random;
+    
+    public float MoveSpeed => _moveSpeed;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+        _random = new Random();
+    }
+
+    void Update()
+    {
+        var horizontalMovement = Input.GetAxis("Horizontal");
+        var verticalMovement = Input.GetAxis("Vertical");
+
+        if (horizontalMovement != 0 || verticalMovement != 0)
+        {
+            if (!_audioSource.isPlaying)
+            {
+                _audioSource.clip = _audioClips[_random.Next(0, _audioClips.Length - 1)];
+                _audioSource.Play();
+            }
+            transform.Translate(Input.GetAxis("Horizontal") * _moveSpeed * Time.deltaTime, 0, Input.GetAxis("Vertical") * _moveSpeed * Time.deltaTime);
+        }
+        
+    }
+}
+```
+
+![image](https://github.com/user-attachments/assets/daf3b8d9-d9a6-4539-baa6-4c5ac5493040)
+
+https://github.com/user-attachments/assets/aa453ba3-da58-4341-89e9-0da36ead1924
+
+## 9. En la escena de tus ejercicios 2D incorpora efectos de sonido ajustados a los siguientes requisitos:
+
+* Crea un grupo SFX en el AudioMixer para eventos:
+    * Movimiento del personaje: Crea sonidos específicos para saltos y aterrizajes.
+    * Interacción y recolección de objetos: Diseña sonido para la recolección de objetos.
+    * Indicadores de salud/vida: Diseña un sonido breve y distintivo para cada cambio en el estado de salud (por ejemplo, ganar o perder vida).
+* Crea un grupo Ambiente:
+    * Crea un sonido de fondo acorde con el ambiente
+    * Agrega una zona específica del juego en que el ambiente cambie de sonido
+* Crea un grupo para música:
+    * Crea un loop de música de fondo acorde al tono del juego
 
